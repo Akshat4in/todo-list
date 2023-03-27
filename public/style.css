@@ -1,0 +1,143 @@
+body{
+    background: linear-gradient(to left, #b8dff2, #8aceef 50%, #5fd8f6 75%);
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 60px;
+    font-family: cursive;
+    font-weight: 500px;
+    
+    text-shadow: 10px 10px 20px #152027;
+}
+
+.addbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.addbox input{
+    height: 30px;
+    width: 300px;
+    border: none;
+}
+.addbox button{
+    height: 32px;
+    border: none;
+background-color: #feffff;
+color:#34aae0
+}
+
+.addbox button:hover{
+    background-color: #a7d5ea;
+    color:white
+}
+.todobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+.todo{
+    padding: 5px;
+    background-color: #feffff;
+    display: flex;
+    width: 300px;
+    margin: 20px;
+    justify-content: space-between;
+    font-size: 1rem;
+    box-shadow:0 0 100px #01e0fe;
+    
+
+}
+.todo li{
+    flex: 1;
+}
+.square1,.square2,.square3,.square4,.square5,.square6{
+  position:absolute;
+    height: 250px;
+    aspect-ratio: 1;
+    background:linear-gradient(rgba(221, 247, 252, 0.45), rgba(169, 226, 238, 0) ) ;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(11, 49, 58, 0.695);
+    backdrop-filter: blur(10.4px);
+    -webkit-backdrop-filter: blur(10.4px);
+    border: 1px solid rgba(255, 255, 255, 0.64);
+    transform: rotate(90deg);
+    z-index: -1;
+    border-radius: 20%;
+
+}
+
+
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(30deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+  }
+  @keyframes In_rotation {
+    0% {
+      transform: rotate(30deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+  }
+
+.square1{
+    left: 10%;
+    
+        animation: rotation 5s infinite ease-in-out;
+      transition: 1s ease-in-out;
+}
+
+.square2{
+    height: 300px;
+    right: 10%;
+    top: 50%;
+    animation: In_rotation 6s infinite ease-in-out;
+
+}
+.square3{
+    left: 30%;
+
+    bottom: 10%;
+    animation: rotation 5s infinite ease-in-out;
+
+}
+.square4{
+    height: 150px;
+    top: 50%;
+    animation: rotation 7s infinite ease-in-out;
+
+}
+
+.square5{
+    height: 150px;
+    top: 10%;
+    right:10%;
+    animation: In_rotation 7s infinite ease-in-out;
+
+}
+.square6{
+    height: 45px;
+    border-radius: 50%;
+    z-index: -5;
+}
+
+
+
