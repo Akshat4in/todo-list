@@ -113,3 +113,20 @@ let x = 0;
     box.style.left = x + "px";
     box.style.top = y + "px";
   }, 20);
+
+
+
+
+  const searchButton = document.querySelector('.addbtn');
+const searchBox = document.querySelector('.add');
+
+searchButton.addEventListener('mouseover', () => {
+  searchBox.focus();
+});
+
+// searchBox.addEventListener('blur', () => {
+//   searchBox.value = '';
+//   searchBox.style.width = '0';
+//   searchBox.style.height = '0';
+// });
+

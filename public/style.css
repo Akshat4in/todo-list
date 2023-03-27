@@ -14,7 +14,7 @@ h1{
     text-shadow: 10px 10px 20px #152027;
 }
 
-.addbox{
+/* .addbox{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,8 +34,8 @@ color:#34aae0
 
 .addbox button:hover{
     background-color: #a7d5ea;
-    color:white
-}
+    color:white */
+/* } */
 .todobox{
     display: flex;
     justify-content: center;
@@ -141,3 +141,50 @@ color:#34aae0
 
 
 
+.addbox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .addbtn {
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    /* backdrop-filter: blur(20px); */
+  }
+  
+  .add {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 5%;
+    background-color: #fcfdfe;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .add:focus {
+    width: 300px;
+    height: 40px;
+    box-shadow: 0 1px  30px rgba(3, 172, 223, 0.756);
+  }
+  
+  /* #search-box:focus::placeholder {
+    opacity: 0;
+  } */
+
+  
+  
+  .fas fa-square-plus {
+    font-size: 5em;
+    /* box-sizing: 2em; */
+  }
